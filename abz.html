@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Document</title>
+<style>
+  input
+  {
+    width: 30%;
+    height: 30px;
+    padding: 6px 20px;
+    margin: 8px;
+    
+
+  }
+  input[type=submit]
+  {
+    width: 10%;
+    height: 10%;
+    background-color: lightpink;
+    color: black;
+    cursor: progress;
+    }
+    input[type=reset]
+    {
+       width: 10%;
+       height: 10%;
+       }
+
+    input[type=reset]:hover
+    {
+       background-color: tomato;
+    }
+    label {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+      }
+    input[type=range]
+    {
+      width: auto;
+      height: auto;
+    }
+    input[type=number]
+    {
+      width: auto;
+      height: auto;
+    }
+    ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(74, 179, 207);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: rgb(52, 63, 219);
+}
+</style>
+</head>
+<b><body text="white" background="C:\Users\91944\Downloads\istockphoto-606671804-612x612.jpg">
+  <header>
+    <ul>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">News</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </header>
+
+<center><form  oninput="x.value=parseInt(a.value)+parseInt(b.value)" action ="https://www.cosmic-symbolism.com/">
+    <label>FIRST NAME</label>
+    <input type="text" placeholder="enter your name"><br><br>
+    <label>MAIL ID</label>
+    <input type="email" placeholder="enter your email"><br><br>
+    <label>ENTER DISTRICT</label>
+    <input list="district"> 
+    <datalist id="district">
+      <option>palakkad</option>
+      <option>idukki</option>
+      <option>kochi</option>
+      <option>wayanad</option>
+    </datalist><br><br>
+    <label>UPLOAD YOUR IMAGE</label>
+    <input type="file"><br><br>
+
+    <progress value="45" max="100"></progress>45%<br><br>
+
+    <input type="range" id="a" value="50">
+    +<input type="number" id="b" value="25">
+    = <output name="x" for="a b"></output><br><br>
+
+
+
+     <label>PASSWORD</label>
+      <input type="password" placeholder="enter your password" minlength="6" maxlength="12"><br><br>
+      <input type="submit"><br><br>
+      <input type="reset"></form></center>    
+</body></b>
+
+</html>
